@@ -1,13 +1,12 @@
 import got from 'got'
 import { taskEither as TE } from "fp-ts";
 
-// eslint-disable-next-line functional/no-return-void
-export const reformatUUID = () => {
+export const reformatUUID = () =>
   // eslint-disable-next-line functional/no-expression-statement
   got.get('https://www.uuidgenerator.net/version4/bulk.json?amount=1')
     .then((res) => res.body.replace('-', ','))
     .catch((err) => err)
-}
+
 
 // eslint-disable-next-line functional/no-return-void
 export const reformatUUIDUsingTE = () => {
