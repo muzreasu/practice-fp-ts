@@ -6,7 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "fp-ts": "^2.11.9"
+    "fp-ts": "^2.11.9",
+    "got": "^12.0.3"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.16.0",
