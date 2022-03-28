@@ -1,4 +1,5 @@
 import got from 'got'
+import { taskEither as TE } from "fp-ts";
 
 // eslint-disable-next-line functional/no-return-void
 export const reformatUUID = () => {
@@ -10,5 +11,5 @@ export const reformatUUID = () => {
 
 // eslint-disable-next-line functional/no-return-void
 export const reformatUUIDUsingTE = () => {
-  //用TE实现和上一个方法一样的功能,并且不能存在eslint warning
+  //用TE实现和上一个方法一样的功能, 返回类型为TE.TaskEither<string, any>，并且不能存在eslint warning
 }
